@@ -50,6 +50,4 @@ var writeFruit = function (fruit) {
 	});
 };
 
-writeFruit(fruit);
-  
-  
+writeFruit(fruit); 
