@@ -24,6 +24,7 @@ html {
 h1 {
   text-align: center;
   margin: 0;
+  color: rgb(206,0,0);
 }
 
 .blueberries {
@@ -56,13 +57,23 @@ h1 {
 
 .heading {
   margin: 0 0 0 1em;
+  color: rgb(0,48,74);
 }
 
 .list {
   margin: 0 1em;
 }
 
+dt {
+  color: red;
+  font-weight: bold;
+}
 
+dd {
+  color: rgb(0,48,74);
+  font-style: oblique;
+  margin: 0;
+}
 
 
 

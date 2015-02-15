@@ -36,18 +36,20 @@ var checkShrub = function (check) {
 }
 
 var writeFruit = function (fruit) {
-	fruit.forEach(function (item) {
-		document.write('<div class="unit unit-s-1 unit-m-1-3 island berry">');
-		document.write('<h2 class="heading">' + item.name + '</h2>');
-		document.write('<dl class="list">');
-		document.write('<dt>Species:</dt><dd>' + item.species + '</dd>');
-		document.write('<dt>Grows on shrub:</dt><dd>' + checkShrub(item.growsOnShrub) + '</dd>');
-		document.write('<dt>Energy:</dt><dd>' + item.energy + '</dd>');
-		document.write('<dt>Carbohydrates:</dt><dd>' + item.carbs + '</dd>');
-		document.write('<dt>Protein:</dt><dd>' + item.protein + '</dd>');
-		document.write('</dl>');
-		document.write('</div>');
-	});
+	fruit.forEach(function (item, i) {
+      var berry = ['blueberries', 'grapes', 'red-currant'];
+      document.write('<div class="unit unit-xs-1 unit-m-1-3 berry ' + berry[i] + '"><div class="whitebg">');
+      document.write('<h2 class="heading">' + item.name + '</h2>');
+      document.write('<dl class="list">');
+      document.write('<dt>Species:</dt><dd>' + item.species + '</dd>');
+      document.write('<dt>Grows on shrub:</dt><dd>' + checkShrub(item.growsOnShrub) + '</dd>');
+      document.write('<dt>Energy:</dt><dd>' + item.energy + '</dd>');
+      document.write('<dt>Carbohydrates:</dt><dd>' + item.carbs + '</dd>');
+      document.write('<dt>Protein:</dt><dd>' + item.protein + '</dd>');
+      document.write('</dl>');
+      document.write('</div></div>');
+});
+
 };
 
 writeFruit(fruit); 
