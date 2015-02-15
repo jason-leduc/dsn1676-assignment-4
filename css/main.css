@@ -24,7 +24,7 @@ html {
 h1 {
   text-align: center;
   margin: 0;
-  color: #fff;
+  color: red;
 }
 
 .blueberries {
@@ -48,7 +48,7 @@ h1 {
 
 .heading {
   margin: 0 0 0 1em;
-  color: rgb(0,48,74);
+  color: white;
 }
 
 .list {
