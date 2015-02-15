@@ -42,11 +42,9 @@ h1 {
 .blueberries, .grape, .red-currant {
   background-size: cover;
   background-position: center;
-  background-color: transparent;
   margin: 0;
   padding: 0;
 }
-
 
 .heading {
   margin: 0 0 0 1em;
@@ -58,12 +56,12 @@ h1 {
 }
 
 dt {
-  color: red;
+  color: #fff;
   font-weight: bold;
 }
 
 dd {
-  color: rgb(0,0,99);
+  color: #fff;
   font-style: oblique;
   margin: 0;
 }
